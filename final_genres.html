@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="final.css">
+<title>Book Club Database</title>
+<!--meta data here-->
+</head>
+
+
+<body>
+<header>
+    /* Header background image is in the css */
+<div class="headertext">Book Club Database</div>
+</header>
+
+<div class="leftcolumn">
+    
+    <div class="welcometext">Welcome to the Book Club Database. We are a virtual book club group
+    with a variety of genres to select from. Every month, a new book is voted upon for next 
+    month's read. Join in the discussion for one book or several in our discussion boards. </div>
+    
+    <div class="navbars"><a href="final.html">Home</a></div>
+    <div class="navbars"><a href="final_about.html">About & Contact Us</a></div>
+    <div class="navbars"><a href="final_genres.html">Genre List</a></div>
+    <div class="navbars"><a href="final_FAQ.html">FAQ</a></div>
+    <div class="navbars"><a href="final_discussions.html">Discussion Boards</a></div>
+    <div class="navbars"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
+
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+</div>
+
+
+<div class="rightcolumn"><div class="genrecont">
+<div class="siteheader">Our Genres</div>
+
+<ul class="columns" data-columns="2">
+    <li>Young Adult</li>
+    <li>Fiction</li>
+    <li>Romance</li>
+    <li>Science Fiction</li>
+    <li>Horror</li>
+    <li>Historical Fiction</li>
+    <li>Non-Fiction</li>
+    <li>Banned Books</li>
+    <li>True Crime</li>
+    <li>Fantasy</li>
+</ul>
+
+
+</div></div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>

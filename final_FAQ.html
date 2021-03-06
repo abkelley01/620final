@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="final.css">
+<title>Book Club Database</title>
+<!--meta data here-->
+</head>
+
+
+<body>
+<header>
+    /* Header background image is in the css */
+<div class="headertext">Book Club Database</div>
+</header>
+
+<div class="leftcolumn">
+    
+    <div class="welcometext">Welcome to the Book Club Database. We are a virtual book club group
+    with a variety of genres to select from. Every month, a new book is voted upon for next 
+    month's read. Join in the discussion for one book or several in our discussion boards. </div>
+    
+    <div class="navbars"><a href="final.html">Home</a></div>
+    <div class="navbars"><a href="final_about.html">About & Contact Us</a></div>
+    <div class="navbars"><a href="final_genres.html">Genre List</a></div>
+    <div class="navbars"><a href="final_FAQ.html">FAQ</a></div>
+    <div class="navbars"><a href="final_discussions.html">Discussion Boards</a></div>
+    <div class="navbars"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
+
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+</div>
+
+
+<div class="rightcolumn"><div class="faqcont">
+<div class="siteheader">FAQ</div>
+
+<b>Do I need to create an account? </b><p></p>
+
+Yes, this allows you access to our discussion boards. Without it, you will only be able to access our main pages instead of participate in our monthly discussions. 
+<p></p>
+
+
+<b>Is there a fee for the site? </b><p></p>
+
+
+Currently, we are an entirely free endeavor; a passion project that we want people to be involved in free of charge. 
+<p></p>
+
+
+<b>What if my favorite genre isn't listed? </b><p></p>
+
+
+If we don't have your favorite genre on the list, please let us know! The more people request the addition of a genre, the more likely we are to add it later. 
+<p></p>
+
+
+<b>How do I join the book club discussions? </b><p></p>
+
+
+All you have to do is create an account (or log in if already created) and click on our discussion boards page. From there, all of our discussions are sorted alphabetically by genre and then the most current book will be the first one listed. 
+<p></p>
+
+
+<b>What are archived discussion boards? </b><p></p>
+
+Archived discussion boards are the book club discussions that took place more than six months ago. We want to stay as current as possible with our discussions but we know that sometimes people fall behind on their reading or they're new to the site and want to hop into an older discussion. Due to this reason, we keep the last six months active on the site. 
+
+
+</div>
+</div>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>

@@ -1,0 +1,204 @@
+body {background-color: rgb(255, 255, 255); 
+    font-family: Arial, Helvetica, Verdana, sans-serif; 
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+
+
+}
+
+header {  height: 300px;  
+    background-image: url("https://i.postimg.cc/YSGZ5qg7/books.jpg");
+    background-size: cover; 
+    display: block;}
+
+.headertext {font-size: 70px; text-align: left; vertical-align: text-bottom; color: white; 
+    line-height: 500px; text-shadow: 4px 4px #000; }
+    
+  /* Create two unequal columns that floats next to each other */
+  /* Right column */
+  .rightcolumn {   
+    float: right;
+    width: 75%;
+    padding-left: 20px;
+    
+  }
+  
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 25%;
+    position: fixed;
+  }
+
+
+table.bookTable {
+    margin-left: 100px;
+    font-family: Georgia;
+    display: block;
+    border-collapse: separate;
+    border-spacing: 70px 5px;
+    }
+table.bookTable td {
+    padding: 3px 2px;
+    border: solid 1px #000;
+     }
+table.bookTable tbody td {
+    font-size: 13px;
+}
+
+
+
+.bookicon {width: 200px; height: 200px; 
+    border: 1px solid #000;}
+.bookicon img {width: 200px; height: 200px; object-fit: cover; }
+.booktitle {font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 14px; font-weight: bold; font-style: italic;}
+
+
+.welcometext {font-size: 14px; text-align: justify; padding: 5px; margin-bottom: 10px;}
+.navbars {background: rgba(189, 209, 242,.5); padding: 10px; margin-bottom: 5px;
+    text-align: center; font-size: 15px; border-radius: 25px; border: 1px solid #000;}
+
+.siteheader {font-size: 60px; text-decoration: underline; text-align: center;}
+
+.aboutcont, .genrecont, .faqcont, .disccont {margin-left: 150px;
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    width: 60%;
+    font-family: Georgia;
+    font-size: 14px;
+    text-align: justify;
+    display: block;}
+
+ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        margin: 0 auto;
+      }
+
+li {font-size: 30px; font-weight: bold; text-decoration: underline; padding: 20px;}
+.discbars { width: 100%; height: 20px; padding: 15px; border: solid 1px #aeaeae; 
+    font-size: 20px; margin-bottom: 10px; }
+.discfont { margin: 0 25px 0 25px;}
+.disctext_right {float: right; }
+
+
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {background: rgba(189, 209, 242,.5);
+    text-align: center; font-size: 15px;  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="final.css">
+<title>Book Club Database - About</title>
+<!--meta data here-->
+</head>
+
+
+<body>
+<header>
+    /* Header background image is in the css */
+<div class="headertext">Book Club Database</div>
+</header>
+
+<div class="leftcolumn">
+    
+    <div class="welcometext">Welcome to the Book Club Database. We are a virtual book club group
+    with a variety of genres to select from. Every month, a new book is voted upon for next 
+    month's read. Join in the discussion for one book or several in our discussion boards. </div>
+    
+    <div class="navbars"><a href="final.html">Home</a></div>
+    <div class="navbars"><a href="final_about.html">About & Contact Us</a></div>
+    <div class="navbars"><a href="final_genres.html">Genre List</a></div>
+    <div class="navbars"><a href="final_FAQ.html">FAQ</a></div>
+    <div class="navbars"><a href="final_discussions.html">Discussion Boards</a></div>
+    <div class="navbars"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
+
+
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+</div>
+
+
+<div class="rightcolumn"><div class="aboutcont">
+<div class="siteheader">About Us</div>
+<p></p>
+Book Club Database was an idea formed originally to deal with the separation of a group of friends during the COVID-19 pandemic. Weekly trivia got a little stale and all of us were scattered across the country due to jobs, family, etc. In our griend group, one of our main passions has always been reading. So what better way to connect than create a book club? The first hurdle was picking a genre, since all of us are interested in a variety of topics. When we settled on a few genres to pull from, we realized that this might be an issue for many groups. Some like horror, some like historical fiction, and some only read non-fiction. So how did we solve this problem? We decided to expand our reading circles to include anyone who was interested. And so Book Club Database was brought to life. 
+<p></p>
+Our main goal is to provide inspiration on what to read and people to connect with over those books that we have tackled already. Whether new to a book club or a veteran, we wanted to provide a welcoming, warm place for everyone to call home. This is our home for that. 
+
+
+<div class="siteheader" style="margin-top:55px;">Contact Us</div>
+<form>
+    <label for="fname">First </label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+    <label for="lname">Last </label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+
+</div></div>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
